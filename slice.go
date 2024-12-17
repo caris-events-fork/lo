@@ -3,8 +3,8 @@ package lo
 import (
 	"sort"
 
-	"github.com/samber/lo/internal/constraints"
-	"github.com/samber/lo/internal/rand"
+	"github.com/caris-events-fork/lo/internal/constraints"
+	"github.com/caris-events-fork/lo/internal/rand"
 )
 
 func MapErr[T any, R any](collection []T, iteratee func(T, int) (R, error)) ([]R, error) {

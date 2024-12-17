@@ -1,15 +1,15 @@
 # lo - Iterate over slices, maps, channels...
 
-[![tag](https://img.shields.io/github/tag/samber/lo.svg)](https://github.com/samber/lo/releases)
+[![tag](https://img.shields.io/github/tag/caris-events-fork/lo.svg)](https://github.com/caris-events-fork/lo/releases)
 ![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.18-%23007d9c)
-[![GoDoc](https://godoc.org/github.com/samber/lo?status.svg)](https://pkg.go.dev/github.com/samber/lo)
-![Build Status](https://github.com/samber/lo/actions/workflows/test.yml/badge.svg)
-[![Go report](https://goreportcard.com/badge/github.com/samber/lo)](https://goreportcard.com/report/github.com/samber/lo)
-[![Coverage](https://img.shields.io/codecov/c/github/samber/lo)](https://codecov.io/gh/samber/lo)
-[![Contributors](https://img.shields.io/github/contributors/samber/lo)](https://github.com/samber/lo/graphs/contributors)
-[![License](https://img.shields.io/github/license/samber/lo)](./LICENSE)
+[![GoDoc](https://godoc.org/github.com/caris-events-fork/lo?status.svg)](https://pkg.go.dev/github.com/caris-events-fork/lo)
+![Build Status](https://github.com/caris-events-fork/lo/actions/workflows/test.yml/badge.svg)
+[![Go report](https://goreportcard.com/badge/github.com/caris-events-fork/lo)](https://goreportcard.com/report/github.com/caris-events-fork/lo)
+[![Coverage](https://img.shields.io/codecov/c/github/caris-events-fork/lo)](https://codecov.io/gh/caris-events-fork/lo)
+[![Contributors](https://img.shields.io/github/contributors/caris-events-fork/lo)](https://github.com/caris-events-fork/lo/graphs/contributors)
+[![License](https://img.shields.io/github/license/caris-events-fork/lo)](./LICENSE)
 
-✨ **`samber/lo` is a Lodash-style Go library based on Go 1.18+ Generics.**
+✨ **`caris-events-fork/lo` is a Lodash-style Go library based on Go 1.18+ Generics.**
 
 This project started as an experiment with the new generics implementation. It may look like [Lodash](https://github.com/lodash/lodash) in some aspects. I used to code with the fantastic ["go-funk"](https://github.com/thoas/go-funk) package, but "go-funk" uses reflection and therefore is not typesafe.
 
@@ -19,8 +19,8 @@ In the future, 5 to 10 helpers will overlap with those coming into the Go standa
 
 **See also:**
 
-- [samber/do](https://github.com/samber/do): A dependency injection toolkit based on Go 1.18+ Generics
-- [samber/mo](https://github.com/samber/mo): Monads based on Go 1.18+ Generics (Option, Result, Either...)
+-   [samber/do](https://github.com/samber/do): A dependency injection toolkit based on Go 1.18+ Generics
+-   [samber/mo](https://github.com/samber/mo): Monads based on Go 1.18+ Generics (Option, Result, Either...)
 
 **Why this name?**
 
@@ -31,7 +31,7 @@ I wanted a **short name**, similar to "Lodash" and no Go package uses this name.
 ## 🚀 Install
 
 ```sh
-go get github.com/samber/lo@v1
+go get github.com/caris-events-fork/lo@v1
 ```
 
 This library is v1 and follows SemVer strictly.
@@ -46,8 +46,8 @@ You can import `lo` using:
 
 ```go
 import (
-    "github.com/samber/lo"
-    lop "github.com/samber/lo/parallel"
+    "github.com/caris-events-fork/lo"
+    lop "github.com/caris-events-fork/lo/parallel"
 )
 ```
 
@@ -66,7 +66,7 @@ I cannot recommend it, but in case you are too lazy for repeating `lo.` everywhe
 
 ```go
 import (
-    . "github.com/samber/lo"
+    . "github.com/caris-events-fork/lo"
 )
 ```
 
@@ -74,233 +74,233 @@ I take no responsibility on this junk. 😁 💩
 
 ## 🤠 Spec
 
-GoDoc: [https://godoc.org/github.com/samber/lo](https://godoc.org/github.com/samber/lo)
+GoDoc: [https://godoc.org/github.com/caris-events-fork/lo](https://godoc.org/github.com/caris-events-fork/lo)
 
 Supported helpers for slices:
 
-- [Filter](#filter)
-- [Map](#map)
-- [FilterMap](#filtermap)
-- [FlatMap](#flatmap)
-- [Reduce](#reduce)
-- [ReduceRight](#reduceright)
-- [ForEach](#foreach)
-- [ForEachWhile](#foreachwhile)
-- [Times](#times)
-- [Uniq](#uniq)
-- [UniqBy](#uniqby)
-- [GroupBy](#groupby)
-- [Chunk](#chunk)
-- [PartitionBy](#partitionby)
-- [Flatten](#flatten)
-- [Interleave](#interleave)
-- [Shuffle](#shuffle)
-- [Reverse](#reverse)
-- [Fill](#fill)
-- [Repeat](#repeat)
-- [RepeatBy](#repeatby)
-- [KeyBy](#keyby)
-- [Associate / SliceToMap](#associate-alias-slicetomap)
-- [Drop](#drop)
-- [DropRight](#dropright)
-- [DropWhile](#dropwhile)
-- [DropRightWhile](#droprightwhile)
-- [DropByIndex](#DropByIndex)
-- [Reject](#reject)
-- [RejectMap](#rejectmap)
-- [FilterReject](#filterreject)
-- [Count](#count)
-- [CountBy](#countby)
-- [CountValues](#countvalues)
-- [CountValuesBy](#countvaluesby)
-- [Subset](#subset)
-- [Slice](#slice)
-- [Replace](#replace)
-- [ReplaceAll](#replaceall)
-- [Compact](#compact)
-- [IsSorted](#issorted)
-- [IsSortedByKey](#issortedbykey)
-- [Splice](#Splice)
+-   [Filter](#filter)
+-   [Map](#map)
+-   [FilterMap](#filtermap)
+-   [FlatMap](#flatmap)
+-   [Reduce](#reduce)
+-   [ReduceRight](#reduceright)
+-   [ForEach](#foreach)
+-   [ForEachWhile](#foreachwhile)
+-   [Times](#times)
+-   [Uniq](#uniq)
+-   [UniqBy](#uniqby)
+-   [GroupBy](#groupby)
+-   [Chunk](#chunk)
+-   [PartitionBy](#partitionby)
+-   [Flatten](#flatten)
+-   [Interleave](#interleave)
+-   [Shuffle](#shuffle)
+-   [Reverse](#reverse)
+-   [Fill](#fill)
+-   [Repeat](#repeat)
+-   [RepeatBy](#repeatby)
+-   [KeyBy](#keyby)
+-   [Associate / SliceToMap](#associate-alias-slicetomap)
+-   [Drop](#drop)
+-   [DropRight](#dropright)
+-   [DropWhile](#dropwhile)
+-   [DropRightWhile](#droprightwhile)
+-   [DropByIndex](#DropByIndex)
+-   [Reject](#reject)
+-   [RejectMap](#rejectmap)
+-   [FilterReject](#filterreject)
+-   [Count](#count)
+-   [CountBy](#countby)
+-   [CountValues](#countvalues)
+-   [CountValuesBy](#countvaluesby)
+-   [Subset](#subset)
+-   [Slice](#slice)
+-   [Replace](#replace)
+-   [ReplaceAll](#replaceall)
+-   [Compact](#compact)
+-   [IsSorted](#issorted)
+-   [IsSortedByKey](#issortedbykey)
+-   [Splice](#Splice)
 
 Supported helpers for maps:
 
-- [Keys](#keys)
-- [UniqKeys](#uniqkeys)
-- [HasKey](#haskey)
-- [ValueOr](#valueor)
-- [Values](#values)
-- [UniqValues](#uniqvalues)
-- [PickBy](#pickby)
-- [PickByKeys](#pickbykeys)
-- [PickByValues](#pickbyvalues)
-- [OmitBy](#omitby)
-- [OmitByKeys](#omitbykeys)
-- [OmitByValues](#omitbyvalues)
-- [Entries / ToPairs](#entries-alias-topairs)
-- [FromEntries / FromPairs](#fromentries-alias-frompairs)
-- [Invert](#invert)
-- [Assign (merge of maps)](#assign)
-- [MapKeys](#mapkeys)
-- [MapValues](#mapvalues)
-- [MapEntries](#mapentries)
-- [MapToSlice](#maptoslice)
+-   [Keys](#keys)
+-   [UniqKeys](#uniqkeys)
+-   [HasKey](#haskey)
+-   [ValueOr](#valueor)
+-   [Values](#values)
+-   [UniqValues](#uniqvalues)
+-   [PickBy](#pickby)
+-   [PickByKeys](#pickbykeys)
+-   [PickByValues](#pickbyvalues)
+-   [OmitBy](#omitby)
+-   [OmitByKeys](#omitbykeys)
+-   [OmitByValues](#omitbyvalues)
+-   [Entries / ToPairs](#entries-alias-topairs)
+-   [FromEntries / FromPairs](#fromentries-alias-frompairs)
+-   [Invert](#invert)
+-   [Assign (merge of maps)](#assign)
+-   [MapKeys](#mapkeys)
+-   [MapValues](#mapvalues)
+-   [MapEntries](#mapentries)
+-   [MapToSlice](#maptoslice)
 
 Supported math helpers:
 
-- [Range / RangeFrom / RangeWithSteps](#range--rangefrom--rangewithsteps)
-- [Clamp](#clamp)
-- [Sum](#sum)
-- [SumBy](#sumby)
-- [Mean](#mean)
-- [MeanBy](#meanby)
+-   [Range / RangeFrom / RangeWithSteps](#range--rangefrom--rangewithsteps)
+-   [Clamp](#clamp)
+-   [Sum](#sum)
+-   [SumBy](#sumby)
+-   [Mean](#mean)
+-   [MeanBy](#meanby)
 
 Supported helpers for strings:
 
-- [RandomString](#randomstring)
-- [Substring](#substring)
-- [ChunkString](#chunkstring)
-- [RuneLength](#runelength)
-- [PascalCase](#pascalcase)
-- [CamelCase](#camelcase)
-- [KebabCase](#kebabcase)
-- [SnakeCase](#snakecase)
-- [Words](#words)
-- [Capitalize](#capitalize)
-- [Ellipsis](#ellipsis)
+-   [RandomString](#randomstring)
+-   [Substring](#substring)
+-   [ChunkString](#chunkstring)
+-   [RuneLength](#runelength)
+-   [PascalCase](#pascalcase)
+-   [CamelCase](#camelcase)
+-   [KebabCase](#kebabcase)
+-   [SnakeCase](#snakecase)
+-   [Words](#words)
+-   [Capitalize](#capitalize)
+-   [Ellipsis](#ellipsis)
 
 Supported helpers for tuples:
 
-- [T2 -> T9](#t2---t9)
-- [Unpack2 -> Unpack9](#unpack2---unpack9)
-- [Zip2 -> Zip9](#zip2---zip9)
-- [ZipBy2 -> ZipBy9](#zipby2---zipby9)
-- [Unzip2 -> Unzip9](#unzip2---unzip9)
-- [UnzipBy2 -> UnzipBy9](#unzipby2---unzipby9)
+-   [T2 -> T9](#t2---t9)
+-   [Unpack2 -> Unpack9](#unpack2---unpack9)
+-   [Zip2 -> Zip9](#zip2---zip9)
+-   [ZipBy2 -> ZipBy9](#zipby2---zipby9)
+-   [Unzip2 -> Unzip9](#unzip2---unzip9)
+-   [UnzipBy2 -> UnzipBy9](#unzipby2---unzipby9)
 
 Supported helpers for time and duration:
 
-- [Duration](#duration)
-- [Duration0 -> Duration10](#duration0---duration10)
+-   [Duration](#duration)
+-   [Duration0 -> Duration10](#duration0---duration10)
 
 Supported helpers for channels:
 
-- [ChannelDispatcher](#channeldispatcher)
-- [SliceToChannel](#slicetochannel)
-- [Generator](#generator)
-- [Buffer](#buffer)
-- [BufferWithTimeout](#bufferwithtimeout)
-- [FanIn](#fanin)
-- [FanOut](#fanout)
+-   [ChannelDispatcher](#channeldispatcher)
+-   [SliceToChannel](#slicetochannel)
+-   [Generator](#generator)
+-   [Buffer](#buffer)
+-   [BufferWithTimeout](#bufferwithtimeout)
+-   [FanIn](#fanin)
+-   [FanOut](#fanout)
 
 Supported intersection helpers:
 
-- [Contains](#contains)
-- [ContainsBy](#containsby)
-- [Every](#every)
-- [EveryBy](#everyby)
-- [Some](#some)
-- [SomeBy](#someby)
-- [None](#none)
-- [NoneBy](#noneby)
-- [Intersect](#intersect)
-- [Difference](#difference)
-- [Union](#union)
-- [Without](#without)
-- [WithoutEmpty](#withoutempty)
+-   [Contains](#contains)
+-   [ContainsBy](#containsby)
+-   [Every](#every)
+-   [EveryBy](#everyby)
+-   [Some](#some)
+-   [SomeBy](#someby)
+-   [None](#none)
+-   [NoneBy](#noneby)
+-   [Intersect](#intersect)
+-   [Difference](#difference)
+-   [Union](#union)
+-   [Without](#without)
+-   [WithoutEmpty](#withoutempty)
 
 Supported search helpers:
 
-- [IndexOf](#indexof)
-- [LastIndexOf](#lastindexof)
-- [Find](#find)
-- [FindIndexOf](#findindexof)
-- [FindLastIndexOf](#findlastindexof)
-- [FindOrElse](#findorelse)
-- [FindKey](#findkey)
-- [FindKeyBy](#findkeyby)
-- [FindUniques](#finduniques)
-- [FindUniquesBy](#finduniquesby)
-- [FindDuplicates](#findduplicates)
-- [FindDuplicatesBy](#findduplicatesby)
-- [Min](#min)
-- [MinBy](#minby)
-- [Earliest](#earliest)
-- [EarliestBy](#earliestby)
-- [Max](#max)
-- [MaxBy](#maxby)
-- [Latest](#latest)
-- [LatestBy](#latestby)
-- [First](#first)
-- [FirstOrEmpty](#FirstOrEmpty)
-- [FirstOr](#FirstOr)
-- [Last](#last)
-- [LastOrEmpty](#LastOrEmpty)
-- [LastOr](#LastOr)
-- [Nth](#nth)
-- [Sample](#sample)
-- [Samples](#samples)
+-   [IndexOf](#indexof)
+-   [LastIndexOf](#lastindexof)
+-   [Find](#find)
+-   [FindIndexOf](#findindexof)
+-   [FindLastIndexOf](#findlastindexof)
+-   [FindOrElse](#findorelse)
+-   [FindKey](#findkey)
+-   [FindKeyBy](#findkeyby)
+-   [FindUniques](#finduniques)
+-   [FindUniquesBy](#finduniquesby)
+-   [FindDuplicates](#findduplicates)
+-   [FindDuplicatesBy](#findduplicatesby)
+-   [Min](#min)
+-   [MinBy](#minby)
+-   [Earliest](#earliest)
+-   [EarliestBy](#earliestby)
+-   [Max](#max)
+-   [MaxBy](#maxby)
+-   [Latest](#latest)
+-   [LatestBy](#latestby)
+-   [First](#first)
+-   [FirstOrEmpty](#FirstOrEmpty)
+-   [FirstOr](#FirstOr)
+-   [Last](#last)
+-   [LastOrEmpty](#LastOrEmpty)
+-   [LastOr](#LastOr)
+-   [Nth](#nth)
+-   [Sample](#sample)
+-   [Samples](#samples)
 
 Conditional helpers:
 
-- [Ternary](#ternary)
-- [TernaryF](#ternaryf)
-- [If / ElseIf / Else](#if--elseif--else)
-- [Switch / Case / Default](#switch--case--default)
+-   [Ternary](#ternary)
+-   [TernaryF](#ternaryf)
+-   [If / ElseIf / Else](#if--elseif--else)
+-   [Switch / Case / Default](#switch--case--default)
 
 Type manipulation helpers:
 
-- [IsNil](#isnil)
-- [ToPtr](#toptr)
-- [Nil](#nil)
-- [EmptyableToPtr](#emptyabletoptr)
-- [FromPtr](#fromptr)
-- [FromPtrOr](#fromptror)
-- [ToSlicePtr](#tosliceptr)
-- [FromSlicePtr](#fromsliceptr)
-- [FromSlicePtrOr](#fromsliceptror)
-- [ToAnySlice](#toanyslice)
-- [FromAnySlice](#fromanyslice)
-- [Empty](#empty)
-- [IsEmpty](#isempty)
-- [IsNotEmpty](#isnotempty)
-- [Coalesce](#coalesce)
-- [CoalesceOrEmpty](#coalesceorempty)
+-   [IsNil](#isnil)
+-   [ToPtr](#toptr)
+-   [Nil](#nil)
+-   [EmptyableToPtr](#emptyabletoptr)
+-   [FromPtr](#fromptr)
+-   [FromPtrOr](#fromptror)
+-   [ToSlicePtr](#tosliceptr)
+-   [FromSlicePtr](#fromsliceptr)
+-   [FromSlicePtrOr](#fromsliceptror)
+-   [ToAnySlice](#toanyslice)
+-   [FromAnySlice](#fromanyslice)
+-   [Empty](#empty)
+-   [IsEmpty](#isempty)
+-   [IsNotEmpty](#isnotempty)
+-   [Coalesce](#coalesce)
+-   [CoalesceOrEmpty](#coalesceorempty)
 
 Function helpers:
 
-- [Partial](#partial)
-- [Partial2 -> Partial5](#partial2---partial5)
+-   [Partial](#partial)
+-   [Partial2 -> Partial5](#partial2---partial5)
 
 Concurrency helpers:
 
-- [Attempt](#attempt)
-- [AttemptWhile](#attemptwhile)
-- [AttemptWithDelay](#attemptwithdelay)
-- [AttemptWhileWithDelay](#attemptwhilewithdelay)
-- [Debounce](#debounce)
-- [DebounceBy](#debounceby)
-- [Synchronize](#synchronize)
-- [Async](#async)
-- [Transaction](#transaction)
-- [WaitFor](#waitfor)
-- [WaitForWithContext](#waitforwithcontext)
+-   [Attempt](#attempt)
+-   [AttemptWhile](#attemptwhile)
+-   [AttemptWithDelay](#attemptwithdelay)
+-   [AttemptWhileWithDelay](#attemptwhilewithdelay)
+-   [Debounce](#debounce)
+-   [DebounceBy](#debounceby)
+-   [Synchronize](#synchronize)
+-   [Async](#async)
+-   [Transaction](#transaction)
+-   [WaitFor](#waitfor)
+-   [WaitForWithContext](#waitforwithcontext)
 
 Error handling:
 
-- [Validate](#validate)
-- [Must](#must)
-- [Try](#try)
-- [Try1 -> Try6](#try0-6)
-- [TryOr](#tryor)
-- [TryOr1 -> TryOr6](#tryor0-6)
-- [TryCatch](#trycatch)
-- [TryWithErrorValue](#trywitherrorvalue)
-- [TryCatchWithErrorValue](#trycatchwitherrorvalue)
-- [ErrorsAs](#errorsas)
+-   [Validate](#validate)
+-   [Must](#must)
+-   [Try](#try)
+-   [Try1 -> Try6](#try0-6)
+-   [TryOr](#tryor)
+-   [TryOr1 -> TryOr6](#tryor0-6)
+-   [TryCatch](#trycatch)
+-   [TryWithErrorValue](#trywitherrorvalue)
+-   [TryCatchWithErrorValue](#trycatchwitherrorvalue)
+-   [ErrorsAs](#errorsas)
 
 Constraints:
 
-- Clonable
+-   Clonable
 
 ### Filter
 
@@ -320,7 +320,7 @@ even := lo.Filter([]int{1, 2, 3, 4}, func(x int, index int) bool {
 Manipulates a slice of one type and transforms it into a slice of another type:
 
 ```go
-import "github.com/samber/lo"
+import "github.com/caris-events-fork/lo"
 
 lo.Map([]int64{1, 2, 3, 4}, func(x int64, index int) string {
     return strconv.FormatInt(x, 10)
@@ -333,7 +333,7 @@ lo.Map([]int64{1, 2, 3, 4}, func(x int64, index int) string {
 Parallel processing: like `lo.Map()`, but the mapper function is called in a goroutine. Results are returned in the same order.
 
 ```go
-import lop "github.com/samber/lo/parallel"
+import lop "github.com/caris-events-fork/lo/parallel"
 
 lop.Map([]int64{1, 2, 3, 4}, func(x int64, _ int) string {
     return strconv.FormatInt(x, 10)
@@ -406,7 +406,7 @@ result := lo.ReduceRight([][]int{{0, 1}, {2, 3}, {4, 5}}, func(agg []int, item [
 Iterates over elements of a collection and invokes the function over each element.
 
 ```go
-import "github.com/samber/lo"
+import "github.com/caris-events-fork/lo"
 
 lo.ForEach([]string{"hello", "world"}, func(x string, _ int) {
     println(x)
@@ -419,7 +419,7 @@ lo.ForEach([]string{"hello", "world"}, func(x string, _ int) {
 Parallel processing: like `lo.ForEach()`, but the callback is called as a goroutine.
 
 ```go
-import lop "github.com/samber/lo/parallel"
+import lop "github.com/caris-events-fork/lo/parallel"
 
 lop.ForEach([]string{"hello", "world"}, func(x string, _ int) {
     println(x)
@@ -452,7 +452,7 @@ lo.ForEachWhile(list, func(x int64, _ int) bool {
 Times invokes the iteratee n times, returning an array of the results of each invocation. The iteratee is invoked with index as argument.
 
 ```go
-import "github.com/samber/lo"
+import "github.com/caris-events-fork/lo"
 
 lo.Times(3, func(i int) string {
     return strconv.FormatInt(int64(i), 10)
@@ -465,7 +465,7 @@ lo.Times(3, func(i int) string {
 Parallel processing: like `lo.Times()`, but callback is called in goroutine.
 
 ```go
-import lop "github.com/samber/lo/parallel"
+import lop "github.com/caris-events-fork/lo/parallel"
 
 lop.Times(3, func(i int) string {
     return strconv.FormatInt(int64(i), 10)
@@ -502,7 +502,7 @@ uniqValues := lo.UniqBy([]int{0, 1, 2, 3, 4, 5}, func(i int) int {
 Returns an object composed of keys generated from the results of running each element of collection through iteratee.
 
 ```go
-import lo "github.com/samber/lo"
+import lo "github.com/caris-events-fork/lo"
 
 groups := lo.GroupBy([]int{0, 1, 2, 3, 4, 5}, func(i int) int {
     return i%3
@@ -515,7 +515,7 @@ groups := lo.GroupBy([]int{0, 1, 2, 3, 4, 5}, func(i int) int {
 Parallel processing: like `lo.GroupBy()`, but callback is called in goroutine.
 
 ```go
-import lop "github.com/samber/lo/parallel"
+import lop "github.com/caris-events-fork/lo/parallel"
 
 lop.GroupBy([]int{0, 1, 2, 3, 4, 5}, func(i int) int {
     return i%3
@@ -548,7 +548,7 @@ lo.Chunk([]int{0}, 2)
 Returns an array of elements split into groups. The order of grouped values is determined by the order they occur in collection. The grouping is generated from the results of running each element of collection through iteratee.
 
 ```go
-import lo "github.com/samber/lo"
+import lo "github.com/caris-events-fork/lo"
 
 partitions := lo.PartitionBy([]int{-2, -1, 0, 1, 2, 3, 4, 5}, func(x int) string {
     if x < 0 {
@@ -566,7 +566,7 @@ partitions := lo.PartitionBy([]int{-2, -1, 0, 1, 2, 3, 4, 5}, func(x int) string
 Parallel processing: like `lo.PartitionBy()`, but callback is called in goroutine. Results are returned in the same order.
 
 ```go
-import lop "github.com/samber/lo/parallel"
+import lop "github.com/caris-events-fork/lo/parallel"
 
 partitions := lop.PartitionBy([]int{-2, -1, 0, 1, 2, 3, 4, 5}, func(x int) string {
     if x < 0 {
@@ -619,7 +619,7 @@ randomOrder := lo.Shuffle([]int{0, 1, 2, 3, 4, 5})
 
 Reverses array so that the first element becomes the last, the second element becomes the second to last, and so on.
 
-⚠️ This helper is **mutable**. This behavior might change in `v2.0.0`. See [#160](https://github.com/samber/lo/issues/160).
+⚠️ This helper is **mutable**. This behavior might change in `v2.0.0`. See [#160](https://github.com/caris-events-fork/lo/issues/160).
 
 ```go
 reverseOrder := lo.Reverse([]int{0, 1, 2, 3, 4, 5})
@@ -787,7 +787,6 @@ l := lo.DropByIndex([]int{0, 1, 2, 3, 4, 5}, 2, 4, -1)
 
 [[play](https://go.dev/play/p/JswS7vXRJP2)]
 
-
 ### Reject
 
 The opposite of Filter, this method returns the elements of collection that predicate does not return truthy for.
@@ -806,8 +805,9 @@ odd := lo.Reject([]int{1, 2, 3, 4}, func(x int, _ int) bool {
 The opposite of FilterMap, this method returns a slice which obtained after both filtering and mapping using the given callback function.
 
 The callback function should return two values:
-- the result of the mapping operation and
-- whether the result element should be included or not.
+
+-   the result of the mapping operation and
+-   whether the result element should be included or not.
 
 ```go
 items := lo.RejectMap([]int{1, 2, 3, 4}, func(x int, _ int) (int, bool) {
@@ -1062,7 +1062,7 @@ keys := lo.Keys(map[string]int{"foo": 1, "bar": 2}, map[string]int{"bar": 3})
 
 ### UniqKeys
 
-Creates an array of unique map keys. 
+Creates an array of unique map keys.
 
 ```go
 keys := lo.UniqKeys(map[string]int{"foo": 1, "bar": 2}, map[string]int{"baz": 3})
@@ -1747,12 +1747,12 @@ for i := range children {
 
 Many distributions strategies are available:
 
-- [lo.DispatchingStrategyRoundRobin](./channel.go): Distributes messages in a rotating sequential manner.
-- [lo.DispatchingStrategyRandom](./channel.go): Distributes messages in a random manner.
-- [lo.DispatchingStrategyWeightedRandom](./channel.go): Distributes messages in a weighted manner.
-- [lo.DispatchingStrategyFirst](./channel.go): Distributes messages in the first non-full channel.
-- [lo.DispatchingStrategyLeast](./channel.go): Distributes messages in the emptiest channel.
-- [lo.DispatchingStrategyMost](./channel.go): Distributes to the fullest channel.
+-   [lo.DispatchingStrategyRoundRobin](./channel.go): Distributes messages in a rotating sequential manner.
+-   [lo.DispatchingStrategyRandom](./channel.go): Distributes messages in a random manner.
+-   [lo.DispatchingStrategyWeightedRandom](./channel.go): Distributes messages in a weighted manner.
+-   [lo.DispatchingStrategyFirst](./channel.go): Distributes messages in the first non-full channel.
+-   [lo.DispatchingStrategyLeast](./channel.go): Distributes messages in the emptiest channel.
+-   [lo.DispatchingStrategyMost](./channel.go): Distributes to the fullest channel.
 
 Some strategies bring fallback, in order to favor non-blocking behaviors. See implementations.
 
@@ -2065,8 +2065,8 @@ result3 := lo.Intersect([]int{0, 1, 2, 3, 4, 5}, []int{-1, 6})
 
 Returns the difference between two collections.
 
-- The first value is the collection of element absent of list2.
-- The second value is the collection of element absent of list1.
+-   The first value is the collection of element absent of list2.
+-   The second value is the collection of element absent of list1.
 
 ```go
 left, right := lo.Difference([]int{0, 1, 2, 3, 4, 5}, []int{0, 2, 6})
@@ -2421,6 +2421,7 @@ first := lo.FirstOrEmpty([]int{1, 2, 3})
 first := lo.FirstOrEmpty([]int{})
 // 0
 ```
+
 ### FirstOr
 
 Returns the first element of a collection or the fallback value if empty.
@@ -2458,6 +2459,7 @@ last := lo.LastOrEmpty([]int{1, 2, 3})
 last := lo.LastOrEmpty([]int{})
 // 0
 ```
+
 ### LastOr
 
 Returns the first element of a collection or the fallback value if empty.
@@ -3213,7 +3215,6 @@ iterations, duration, ok := lo.WaitFor(laterTrue, 10*time.Millisecond, 5*time.Mi
 // false
 ```
 
-
 ### WaitForWithContext
 
 Runs periodically until a condition is validated or context is invalid.
@@ -3512,7 +3513,7 @@ Here is a comparison between `lo.Map`, `lop.Map`, `go-funk` library and a simple
 $ go test -benchmem -bench ./...
 goos: linux
 goarch: amd64
-pkg: github.com/samber/lo
+pkg: github.com/caris-events-fork/lo
 cpu: Intel(R) Core(TM) i5-7267U CPU @ 3.10GHz
 cpu: Intel(R) Core(TM) i7 CPU         920  @ 2.67GHz
 BenchmarkMap/lo.Map-8         	       8	 132728237 ns/op	39998945 B/op	 1000002 allocs/op
@@ -3520,20 +3521,20 @@ BenchmarkMap/lop.Map-8        	       2	 503947830 ns/op	119999956 B/op	 3000007
 BenchmarkMap/reflect-8        	       2	 826400560 ns/op	170326512 B/op	 4000042 allocs/op
 BenchmarkMap/for-8            	       9	 126252954 ns/op	39998674 B/op	 1000001 allocs/op
 PASS
-ok  	github.com/samber/lo	6.657s
+ok  	github.com/caris-events-fork/lo	6.657s
 ```
 
-- `lo.Map` is way faster (x7) than `go-funk`, a reflection-based Map implementation.
-- `lo.Map` have the same allocation profile than `for`.
-- `lo.Map` is 4% slower than `for`.
-- `lop.Map` is slower than `lo.Map` because it implies more memory allocation and locks. `lop.Map` will be useful for long-running callbacks, such as i/o bound processing.
-- `for` beats other implementations for memory and CPU.
+-   `lo.Map` is way faster (x7) than `go-funk`, a reflection-based Map implementation.
+-   `lo.Map` have the same allocation profile than `for`.
+-   `lo.Map` is 4% slower than `for`.
+-   `lop.Map` is slower than `lo.Map` because it implies more memory allocation and locks. `lop.Map` will be useful for long-running callbacks, such as i/o bound processing.
+-   `for` beats other implementations for memory and CPU.
 
 ## 🤝 Contributing
 
-- Ping me on Twitter [@samuelberthe](https://twitter.com/samuelberthe) (DMs, mentions, whatever :))
-- Fork the [project](https://github.com/samber/lo)
-- Fix [open issues](https://github.com/samber/lo/issues) or request new features
+-   Ping me on Twitter [@samuelberthe](https://twitter.com/samuelberthe) (DMs, mentions, whatever :))
+-   Fork the [project](https://github.com/caris-events-fork/lo)
+-   Fix [open issues](https://github.com/caris-events-fork/lo/issues) or request new features
 
 Don't hesitate ;)
 
@@ -3559,7 +3560,7 @@ make watch-test
 
 ## 👤 Contributors
 
-![Contributors](https://contrib.rocks/image?repo=samber/lo)
+![Contributors](https://contrib.rocks/image?repo=caris-events-fork/lo)
 
 ## 💫 Show your support
 

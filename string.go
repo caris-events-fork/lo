@@ -1,12 +1,13 @@
 package lo
 
 import (
-	"github.com/samber/lo/internal/rand"
 	"math"
 	"regexp"
 	"strings"
 	"unicode"
 	"unicode/utf8"
+
+	"github.com/caris-events-fork/lo/internal/rand"
 
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"

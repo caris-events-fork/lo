@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/samber/lo/internal/rand"
+	"github.com/caris-events-fork/lo/internal/rand"
 )
 
 type DispatchingStrategy[T any] func(msg T, index uint64, channels []<-chan T) int
