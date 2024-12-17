@@ -7,6 +7,20 @@ import (
 	"github.com/samber/lo/internal/rand"
 )
 
+func MapErr[T any, R any](collection []T, iteratee func(T, int) (R, error)) ([]R, error) {
+	result := make([]R, len(collection))
+
+	for i, item := range collection {
+		res, err := iteratee(item, i)
+		if err != nil {
+			return nil, err
+		}
+		result[i] = res
+	}
+
+	return result, nil
+}
+
 // Filter iterates over elements of collection, returning an array of all elements predicate returns truthy for.
 // Play: https://go.dev/play/p/Apjg3WeSi7K
 func Filter[T any, Slice ~[]T](collection Slice, predicate func(item T, index int) bool) Slice {
