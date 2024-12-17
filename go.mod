@@ -1,4 +1,4 @@
-module github.com/samber/lo
+module github.com/caris-events-fork/lo
 
 go 1.18
 
